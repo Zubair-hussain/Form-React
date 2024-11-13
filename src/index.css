@@ -1,0 +1,126 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #29C6E2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  background-color: #A8F2FF;
+  width: 29vw;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7%;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2vw;
+  color: #4a4a4a;
+  margin-bottom: 1vw;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+form > label {
+  margin: 4px 0;
+  font-weight: bold;
+  font-size: 1.5vw;
+  display: flex;
+  align-items: center;
+}
+
+form > label > input {
+  background-color: #D9D9D9;
+  border: none;
+  border-radius: 16px;
+  padding: 9px;
+  margin-left: 1vw;
+  color: #0b1009;
+}
+
+input::placeholder {
+  color: #a9a9a9;
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+}
+
+form > button {
+  padding: 1vw;
+  margin: 1vw 0;
+  width: 10vw;
+  font-size: 1.2vw;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 2vw;
+  font-size: 1.2vw;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App {
+    width: 70vw;
+    padding: 4vw;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  form > label {
+    font-size: 3.5vw;
+  }
+
+  form > button {
+    width: 20vw;
+    padding: 2vw;
+  }
+
+  footer {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .App {
+    width: 90vw;
+    padding: 5vw;
+  }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  form > label {
+    font-size: 4vw;
+  }
+
+  form > button {
+    width: 40vw;
+    padding: 3vw;
+  }
+
+  footer {
+    font-size: 3.5vw;
+  }
+}
